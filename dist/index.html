@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Shadow of the Shogun</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="game">
+  <canvas id="c"></canvas>
+  <div id="grain"></div>
+  <header>
+    <div class="brand"><div class="crest">忍</div><div><b>SHADOW OF THE SHOGUN</b><small>THE FORBIDDEN PALACE</small></div></div>
+    <button id="pauseBtn" aria-label="Pause">Ⅱ</button>
+  </header>
+  <aside id="mission">
+    <div class="eyebrow">MISSION <span>03</span></div>
+    <h1>The Silent<br><i>Garden</i></h1>
+    <div class="rule"></div>
+    <div class="objective"><b>OBJECTIVES</b><div id="o1"><em>◇</em> Reach the inner gate</div><div id="o2"><em>◇</em> Eliminate the captain</div><div id="o3"><em>◇</em> Leave no trace</div></div>
+  </aside>
+  <div id="alert"><span>!</span><div><b>SUSPICION</b><small id="alertText">Hidden</small></div></div>
+  <div id="ammo"><div class="tool"><span class="shuriken">✦</span><b id="shurikenCount">6</b></div><div class="tool"><span class="dagger">†</span><b>∞</b></div></div>
+  <div id="joystick"><div id="stick"></div></div>
+  <button id="actionBtn"><span>●</span><small>CONCEAL</small></button>
+  <button id="throwBtn"><span>✦</span><small>THROW</small></button>
+  <div id="prompt"><b>SHADOW TO HIDE</b><small>Move out of sight</small></div>
+  <div id="start" class="overlay">
+    <div class="startCard"><div class="kanji">忍</div><p>SHADOW OF THE SHOGUN</p><h2>Enter the Garden</h2><button id="startBtn">BEGIN INFILTRATION</button></div>
+  </div>
+  <div id="pause" class="overlay hidden"><div class="startCard"><p>MISSION PAUSED</p><h2>Silent Garden</h2><button id="resumeBtn">RESUME</button><button id="restartBtn" class="secondary">RESTART</button></div></div>
+  <div id="end" class="overlay hidden"><div class="startCard"><div class="kanji" id="endKanji">終</div><p id="endType">MISSION COMPLETE</p><h2 id="endTitle">The target is fallen</h2><button id="againBtn">PLAY AGAIN</button></div></div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
